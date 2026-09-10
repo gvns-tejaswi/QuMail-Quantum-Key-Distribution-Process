@@ -211,7 +211,6 @@
 * AES-256-GCM provides both confidentiality and integrity.
 * The email message is encrypted before secure storage.
 * The encryption process produces:
-
   * Ciphertext
   * Initialization Vector
   * Authentication Tag
@@ -324,7 +323,6 @@ IBM_QUANTUM_TOKEN=your_ibm_quantum_token
 ```
 
 * Replace the values with the required credentials.
-* Do not upload `.env` to GitHub.
 
 ## 16.5 Install Backend Libraries
 
@@ -403,7 +401,7 @@ http://localhost:5173/
 * AES-256-GCM provides email encryption.
 
 
-## 17 Limitations of Existing Systems
+## 17. Limitations of Existing Systems
 
 * Most existing secure email systems primarily rely on **conventional cryptographic techniques** for key generation and encryption.
 * Traditional systems generally use classical key-generation mechanisms rather than demonstrating **Quantum Key Distribution (QKD)** concepts.
@@ -414,7 +412,7 @@ http://localhost:5173/
 * Existing systems may use authentication mechanisms without combining them with **OTP-based protected email retrieval, quantum key generation, and authenticated encryption** in a single application.
 * There is a need for systems that demonstrate how **quantum-based key generation can work together with established encryption techniques** for secure communication.
 
-## 18 Conclusion
+## 18. Conclusion
 
 * QuMail provides a secure email communication platform that combines **quantum key-generation concepts with classical cryptography**.
 * The conventional random-key-generation approach was replaced with a **Qiskit-based BB84 implementation** to demonstrate the concept of Quantum Key Distribution.
@@ -426,7 +424,7 @@ http://localhost:5173/
 * The project demonstrates the practical integration of **quantum computing concepts, cryptography, authentication, cloud services, and secure email communication**.
 * QuMail serves as an academic demonstration of how quantum-based key generation can complement existing cryptographic techniques.
 
-## 19 Future Scope
+## 19. Future Scope
 
 * Integration with **real physical QKD systems** for practical quantum key distribution.
 * Integration with quantum-optical components such as photon sources, detectors, and quantum communication channels.
@@ -440,3 +438,28 @@ http://localhost:5173/
 * Cloud deployment for real-world multi-user access.
 * Enhanced security monitoring, auditing, and intrusion detection.
 * Further optimization of quantum-key generation for large-scale secure communication.
+
+## 20. Security Note
+
+* Do not commit AWS credentials, MongoDB credentials, IBM Quantum tokens, or Django secret keys to GitHub.
+* Store sensitive credentials in the .env file.
+* Do not upload the .env file to the GitHub repository.
+* OTP values should not be returned in API responses or printed in server logs in a production environment.
+* Credentials that are accidentally exposed should be rotated immediately.
+* The project is intended for academic and demonstration purposes and should undergo additional security testing before production deployment.
+
+## 21. Project Structure
+
+* qumail/ contains the Django backend.
+* react/ contains the React frontend.
+* README.md contains project documentation.
+* Backend configuration and application files are maintained within the Django project.
+* Frontend components and pages are maintained within the React project.
+  
+## 22. Contributors
+* GVNS Tejaswi – tejaswigvns@gmail.com
+* SSM Karthik  – somayajulakarthik@gmail.com
+  
+## 23. License
+* This project is developed for academic and educational purposes.
+* The project can be further enhanced and extended for research and demonstration purposes.
