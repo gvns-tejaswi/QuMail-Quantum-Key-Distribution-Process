@@ -228,7 +228,7 @@
 * This protects sensitive email content from being directly exposed in the database.
 * The recipient must pass the required security verification before accessing protected content.
 
-# 15. Requirements
+## 15. Requirements
 
 ## Backend Requirements
 
@@ -271,7 +271,7 @@
 
 * Google Chrome, Microsoft Edge, or any modern web browser.
 
-# 16. Installation Procedure
+## 16. Installation Procedure
 
 ## 16.1 Download the Project
 
