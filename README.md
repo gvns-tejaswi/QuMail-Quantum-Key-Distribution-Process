@@ -458,7 +458,7 @@ http://localhost:5173/
   
 ## 22. Contributors
 * GVNS Tejaswi – tejaswigvns@gmail.com
-* SSM Karthik  – somayajulakarthik@gmail.com
+* SSM Karthik  – somayajulakarthik97@gmail.com
   
 ## 23. License
 * This project is developed for academic and educational purposes.
